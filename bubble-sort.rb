@@ -29,7 +29,7 @@
         end
     end
     #Return the array
-    p arr
+    arr
 
 #Invoke the bubble sort method that returns the array sorted and display to the user
 
