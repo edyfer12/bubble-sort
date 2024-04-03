@@ -1,6 +1,13 @@
 #Define a method that will sort the array via bubble sort and return a new array
     require 'pry-byebug'
     binding.pry
+        #Define a method that is used for swapping two values
+    def swap(arr, counter)
+        tmp = arr[counter - 1]
+        arr[counter - 1] = arr[counter]
+        arr[counter] = tmp
+        return arr
+    end
     arr = [6, 5, 3, 1, 8, 7, 4, 2]
     #Declare a sentinel variable, allSwapped and set to false
     allSwapped = false
@@ -16,9 +23,7 @@
             #If the left element is greater than the right element, swap the values
             if arr[counter - 1] > arr[counter]
                 swapped  = false
-                tmp = arr[counter]
-                arr[counter] = arr[counter - 1]
-                arr[counter- 1] = tmp
+                swap(arr, counter)
             end
             #Otherwise, keep iterating
             counter += 1
