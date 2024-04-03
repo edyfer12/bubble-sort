@@ -8,7 +8,7 @@
         arr[counter] = tmp
         return arr
     end
-    arr = [6, 5, 3, 1, 8, 7, 4, 2]
+def bubble_sort(arr)
     #Declare a sentinel variable, allSwapped and set to false
     allSwapped = false
 
@@ -31,6 +31,7 @@
     end
     #Return the array
     arr.inspect
+end
 
 #Invoke the bubble sort method that returns the array sorted and display to the user
-
+puts bubble_sort([4,3,78,2,0,2])
