@@ -14,6 +14,7 @@
                 tmp = arr[counter - 1]
                 arr[counter - 1] = arr[counter]
                 arr[counter] = tmp
+            end
             #Otherwise, keep iterating
             counter += 1
         end
