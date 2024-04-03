@@ -1,7 +1,9 @@
 #Define a method that will sort the array via bubble sort and return a new array
 
     #Declare a sentinel variable, allSwapped and set to false
+    allSwapped = false
     #Declare and set variable counter to 1
+    counter = 1
     #Set a infinite loop until all elements in the array are sorted in ascending order
         #Loop from 1 to the last index of the array to compare between two values
             #If the left element is greater than the right element, swap the values
