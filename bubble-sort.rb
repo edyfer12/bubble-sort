@@ -1,13 +1,14 @@
 #Define a method that will sort the array via bubble sort and return a new array
-    require 'pry-byebug'
-    binding.pry
-        #Define a method that is used for swapping two values
-    def swap(arr, counter)
-        tmp = arr[counter - 1]
-        arr[counter - 1] = arr[counter]
-        arr[counter] = tmp
-        return arr
-    end
+require 'pry-byebug'
+binding.pry
+#Define a method that is used for swapping two values
+def swap(arr, counter)
+    tmp = arr[counter - 1]
+    arr[counter - 1] = arr[counter]
+    arr[counter] = tmp
+    return arr
+end
+
 def bubble_sort(arr)
     #Declare a sentinel variable, allSwapped and set to false
     allSwapped = false
