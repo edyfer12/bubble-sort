@@ -1,6 +1,3 @@
-#Define a method that will sort the array via bubble sort and return a new array
-require 'pry-byebug'
-binding.pry
 #Define a method that is used for swapping two values
 def swap(arr, counter)
     tmp = arr[counter - 1]
