@@ -14,7 +14,7 @@
         #Loop from 1 to the last index of the array to compare between two values
         while counter < arr.length do
             #If the left element is greater than the right element, swap the values
-            if arr[counter - 1] < arr[counter]
+            if arr[counter - 1] > arr[counter]
                 swapped  = false
                 tmp = arr[counter]
                 arr[counter] = arr[counter - 1]
