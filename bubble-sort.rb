@@ -14,23 +14,19 @@
 
     #Set a infinite loop until all elements in the array are sorted in ascending order
     until allSwapped == true do   
-         #Declare a variable called swapped and set to true
-        swapped = true
+        #Set allSwapped to true
+        allSwapped = true
         #Declare and set variable counter to 1
         counter = 1
         #Loop from 1 to the last index of the array to compare between two values
         while counter < arr.length do
             #If the left element is greater than the right element, swap the values
             if arr[counter - 1] > arr[counter]
-                swapped  = false
+                allSwapped  = false
                 swap(arr, counter)
             end
             #Otherwise, keep iterating
             counter += 1
-        end
-        #If all values are sorted in ascending order end the infinite loop
-        if swapped == true
-            allSwapped = true
         end
     end
     #Return the array
