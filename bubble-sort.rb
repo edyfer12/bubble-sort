@@ -34,7 +34,7 @@
         end
     end
     #Return the array
-    arr
+    arr.inspect
 
 #Invoke the bubble sort method that returns the array sorted and display to the user
 
