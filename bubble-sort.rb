@@ -9,7 +9,12 @@
         #Loop from 1 to the last index of the array to compare between two values
         while counter < arr.length do
             #If the left element is greater than the right element, swap the values
+            if arr[counter - 1] < arr[counter]
+                tmp = arr[counter - 1]
+                arr[counter - 1] = arr[counter]
+                arr[counter] = tmp
             #Otherwise, keep iterating
+            counter += 1
         end
         #If all values are sorted in ascending order end the infinite loop
     end
